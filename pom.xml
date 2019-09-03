@@ -22,10 +22,12 @@
         <module>05-netty</module>
         <module>06-protobuf</module>
         <module>07-netty-protobuf</module>
+        <module>08-thrift</module>
     </modules>
 
 
     <dependencies>
+        <!--netty-->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
@@ -33,6 +35,7 @@
         </dependency>
 
 
+        <!--protobuf-->
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-netty</artifactId>
@@ -60,6 +63,13 @@
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java-util</artifactId>
             <version>${protobuf.version}</version>
+        </dependency>
+
+        <!--thirft-->
+        <dependency>
+            <groupId>org.apache.thrift</groupId>
+            <artifactId>libthrift</artifactId>
+            <version>0.12.0</version>
         </dependency>
     </dependencies>
 
