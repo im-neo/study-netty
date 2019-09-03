@@ -19,12 +19,15 @@ public class ThriftServer {
 
 
     public static void main(String[] args) throws Exception {
+        // 服务模型
         TNonblockingServerSocket socket = new TNonblockingServerSocket(8899);
 
         THsHaServer.Args arg = new THsHaServer.Args(socket).minWorkerThreads(2).maxWorkerThreads(4);
         PersonService.Processor<PersonServiceImpl> processor = new PersonService.Processor<>(new PersonServiceImpl());
 
+        // 传输格式
         arg.protocolFactory(new TCompactProtocol.Factory());
+        // 传输方式
         arg.transportFactory(new TFramedTransport.Factory());
         arg.processorFactory(new TProcessorFactory(processor));
 
