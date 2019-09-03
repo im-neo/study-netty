@@ -1,4 +1,4 @@
-package neo.netty.protobuf.example;
+package neo.netty.protobuf.example.first;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
@@ -7,6 +7,7 @@ import io.netty.handler.codec.protobuf.ProtobufDecoder;
 import io.netty.handler.codec.protobuf.ProtobufEncoder;
 import io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder;
 import io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender;
+import neo.netty.protobuf.example.protobuf.DataInfo;
 
 /**
  * @Classname: TestClientInitializer

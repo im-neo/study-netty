@@ -3,7 +3,7 @@ syntax = "proto2";
 package neo.protobuf.example;
 
 option optimize_for = SPEED;
-option java_package = "neo.netty.protobuf.example";
+option java_package = "neo.netty.protobuf.example.protobuf";
 option java_outer_classname = "DataInfo";
 
 message Student {
@@ -11,3 +11,4 @@ message Student {
     optional int32 age = 2;
     optional string address = 3;
 }
+

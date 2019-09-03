@@ -1,4 +1,4 @@
-package neo.netty.protobuf.example;
+package neo.netty.protobuf.example.second;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -9,10 +9,10 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 
 /**
- * @Classname: MyServer
- * @Description: TODO
+ * @Classname: TestServer
+ * @Description: 多数据类型传输：protobuf 方案 "oneof"
  * @Author: Neo
- * @Date: 2019/9/1 21:34
+ * @Date: 2019/9/2 10:52
  * @Version: 1.0
  */
 public class TestServer {
@@ -28,7 +28,6 @@ public class TestServer {
                     .handler(new LoggingHandler(LogLevel.INFO))
                     .childHandler(new TestServerInitializer());
 
-
             ChannelFuture future = bootstrap.bind(8899).sync();
             future.channel().closeFuture().sync();
         } finally {
@@ -36,4 +35,5 @@ public class TestServer {
             bossGroup.shutdownGracefully();
         }
     }
+
 }

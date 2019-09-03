@@ -1,8 +1,9 @@
-package neo.netty.protobuf.example;
+package neo.netty.protobuf.example.first;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import neo.netty.protobuf.example.protobuf.DataInfo;
 
 /**
  * @Classname: TestClientHandler
