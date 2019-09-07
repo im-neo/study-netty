@@ -23,6 +23,7 @@
         <module>07-netty-protobuf</module>
         <module>08-thrift</module>
         <module>09-grpc</module>
+        <module>10-decorator</module>
     </modules>
 
 
