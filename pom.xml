@@ -24,6 +24,7 @@
         <module>08-thrift</module>
         <module>09-grpc</module>
         <module>10-decorator</module>
+        <module>11-nio</module>
     </modules>
 
 
