@@ -10,6 +10,8 @@
 #### Buffer
 > 1. 除了数组之外，Buffer还提供了对于数据结构化访问方式，并且还可以追踪到系统的读写过程
 > 2. java中的8种原生数据类型都有各自对应的 Buffer 类型，如 IntBuffer 、LongBuffer 、 ByteBuffer 、 CharBuffer 等
+> 3. 0 <= mark <= position <= limit <= capacity
+> 4. `mark` 需搭配 `reset` 使用，否则无意义
 
 #### Channel
 > 1. Channel 指的是可以向其写入数据或是从中读取数据的对象，类似于 java.io 中的 Stream
